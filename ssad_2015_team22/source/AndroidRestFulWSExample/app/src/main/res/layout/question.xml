@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dip"
+            android:text="Question"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dip"
+            android:text="Question"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/choices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/option_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 bytes"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/option_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 bytes"
+                android:checked="false" />
+            <RadioButton
+                android:id="@+id/option_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 bytes"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/option_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 bytes"
+                android:checked="false" />
+
+        </RadioGroup>
+
+       <!-- <TextView
+            android:id="@+id/login_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:textColor="#e30000"
+            android:textStyle="bold" />-->
+
+        <Button
+            android:id="@+id/submit_answer"
+            android:layout_width="135dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:onClick="navigatetoEvaluationActivity"
+            android:text="Submit"
+            android:textColor="#228b22"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/go_to_previous_ques"
+            android:layout_width="135dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:onClick="navigatetopreviousques"
+            android:text="Previous"
+            android:textColor="#228b22"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/go_to_next_ques"
+            android:layout_width="135dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:onClick="navigatetonextques"
+            android:text="Next"
+            android:textColor="#228b22"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>
